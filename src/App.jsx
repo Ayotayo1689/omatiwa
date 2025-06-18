@@ -40,18 +40,16 @@ function App() {
       <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
         <Navbar />
         <div className="main  max-w-[1600px] px-6 md:px-[50px] m-auto">
-          <Router>
-            <Routes>
-              <Route
-                path="/"
-                element={<NonProtectedLazyRoute Component={IndexPage} />}
-              />
-              <Route
-                path="/about"
-                element={<NonProtectedLazyRoute Component={About} />}
-              />
-            </Routes>
-          </Router>
+          <Routes>
+            <Route
+              path="/"
+              element={<NonProtectedLazyRoute Component={IndexPage} />}
+            />
+            <Route
+              path="/about"
+              element={<NonProtectedLazyRoute Component={About} />}
+            />
+          </Routes>
         </div>
         <Footer />
       </ThemeProvider>

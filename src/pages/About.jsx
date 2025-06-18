@@ -1,10 +1,15 @@
 import React from "react";
 import Majeedat from "../assets/Majeedat.svg";
+import WorkExperience from "@/components/WorkExperience";
+import PeoplesOpinion from "@/components/PeoplesOpinion";
+import ExpertiseCards from "@/components/ExpertiseCard";
+import MobileExpertiseCards from "@/components/MobileExpartCard";
 
 const About = () => {
   return (
-    <div>
-      <div className="md:text-[40px] text-[24px] font-[600] mt-8">
+    <div className="md:w-[90%] m-auto">
+<div className="">
+ <div className="md:text-[40px] text-[24px] font-[600] mt-8">
         A Quick Peek into My World
       </div>
       <p className="text-[16px] md:text-[28px] md:leading-[46px] leading-[30px] mt-8 ">
@@ -41,6 +46,19 @@ const About = () => {
         in my room lost in a romance or thriller novel, writing essays on
         societal issues, or binge-watching a good Korean series.
       </p>
+
+</div>
+
+<WorkExperience/>
+
+      <div className="hidden md:block">
+                       <ExpertiseCards />
+                     </div>
+                     <div className="block md:hidden">
+                       <MobileExpertiseCards />
+                     </div>
+
+<PeoplesOpinion />
     </div>
   );
 };
