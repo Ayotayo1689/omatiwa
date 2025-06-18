@@ -1,0 +1,33 @@
+@media print {
+    @page {
+      size: Letter ; /* You can set it to Letter, A3, etc. */
+      margin: 10mm ; /* Top & Bottom: 20mm, Left & Right: 15mm */
+    }
+  
+    body {
+      -webkit-print-color-adjust: exact; /* Ensures colors are preserved */
+      print-color-adjust: exact;
+    }
+  
+    .print-content {
+      page-break-after: auto; /* Avoids breaking in weird places */
+    }
+  
+    .print-content::after {
+      content: "";
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      background: url("../../asset/BigLogo.svg") center/contain no-repeat;
+      opacity: 0.1;
+  
+      transform: translate(-50%, -50%) rotate(-60deg);
+    }
+  
+    .print-content:last-child {
+      page-break-after: avoid; /* Prevents an extra blank page at the end */
+    }
+  }
+  
