@@ -51,10 +51,10 @@ const About = () => {
 
 <WorkExperience/>
 
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
                        <ExpertiseCards />
                      </div>
-                     <div className="block md:hidden">
+                     <div className="block lg:hidden">
                        <MobileExpertiseCards />
                      </div>
 

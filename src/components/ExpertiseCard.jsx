@@ -79,10 +79,10 @@ export default function ExpertiseCards() {
                   ${
                     isHovered
                       ? index === 0
-                        ? "transform rotate-0  left-[7svw] top-0 z-10"
+                        ? "transform rotate-0  left-[1.5vw] top-0 z-10"
                         : index === 1
                         ? "transform rotate-0  top-0 z-20"
-                        : "transform rotate-0   right-[7svw] top-0 z-10"
+                        : "transform rotate-0   right-[1.5vw] top-0 z-10"
                       : index === 0
                       ? "transform -rotate-[25deg] left-[18vw] translate-y-4 z-10"
                       : index === 1
