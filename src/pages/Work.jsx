@@ -7,7 +7,7 @@ import PinImg from "../assets/Pin.svg";
 
 const Work = () => {
   const { id } = useParams();
-  const workItem = users.find((item) => item.id === Number(id));
+  const workItem = users.find((item) => item.id === Number(id || 1));
   console.log(workItem);
 
   return (
