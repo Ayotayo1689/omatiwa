@@ -282,9 +282,9 @@ const Work = () => {
               {d?.images?.map((v, k) => (
                 <div
                   key={k}
-                  className=" p-16 pt-8 mt-20  bg-[#D7EFF4] dark:bg-[#152528] flex gap-6"
+                  className=" p-4 md:p-16 md:pt-8 mt-20  bg-[#D7EFF4] dark:bg-[#152528] md:flex gap-6"
                 >
-                  <div className="mt-8">
+                  <div className="md:mt-8">
                     <i className="text-[20px] md:text-[26px] mb-8 text-[#0BBBDB] underline  font-[500]">
                       {v.title}
                     </i>
@@ -320,11 +320,11 @@ const Work = () => {
               {d?.images?.map((v, k) => (
                 <div
                   key={k}
-                  className={` p-16 pt-8 mt-20 dark:bg-[#152528]  bg-[#D7EFF4] flex overflow-x-clip ${
+                  className={` p-4 md:p-16 md:pt-8 mt-20 dark:bg-[#152528]  bg-[#D7EFF4] md:flex overflow-x-clip ${
                     i === 0 ? "flex-row-reverse items-center " : "flex-row"
                   } gap-8`}
                 >
-                  <div className="mt-8 min-w-[45%]">
+                  <div className="md:mt-8 min-w-[45%]">
                     <div
                       className={`text-[20px] md:text-[26px] mb-6  ${
                         i === 0 ? "" : "text-[#0BBBDB] italic underline"
