@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import AnimatedName from "./components/AnimatedName";
 import About from "./pages/About";
+import { Fun } from "./pages/Fun";
+import Work from "./pages/Work";
 
 const IndexPage = React.lazy(() => import("./pages/IndexPage"));
 
@@ -49,6 +51,15 @@ function App() {
               path="/about"
               element={<NonProtectedLazyRoute Component={About} />}
             />
+            <Route
+              path="/fun"
+              element={<NonProtectedLazyRoute Component={Fun} />}
+            />
+            <Route
+              path="/work/:id"
+              element={<NonProtectedLazyRoute Component={Work} />}
+            />
+             
           </Routes>
         </div>
         <Footer />

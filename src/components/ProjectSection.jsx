@@ -1,11 +1,12 @@
 import { projectsData } from "@/data"
 import ProjectShowcase from "./ProjectShowcase"
+import { useNavigate } from "react-router-dom"
 
 
 const ProjectsSection = () => {
-  const handlePrimaryClick = (link) => {
-    // Handle case study navigation
-    window.open(link, "_blank")
+  const navigate = useNavigate()
+  const handlePrimaryClick = (id) => {
+  navigate(`/work/${id}`)
   }
 
   const handleSecondaryClick = (link) => {
@@ -33,7 +34,7 @@ const ProjectsSection = () => {
         description={project.description}
         primaryButtonText={project.primaryButtonText}
         secondaryButtonText={project.secondaryButtonText}
-        onPrimaryButtonClick={() => handlePrimaryClick(project.primaryButtonLink)}
+        onPrimaryButtonClick={() => handlePrimaryClick(project.id)}
         onSecondaryButtonClick={() => handleSecondaryClick(project.secondaryButtonLink)}
         imagePosition={project.imagePosition}
         className={index > 0 ? "" : ""}
