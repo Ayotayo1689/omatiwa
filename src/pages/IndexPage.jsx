@@ -26,9 +26,9 @@ const IndexPage = () => {
     
     {
       logoShow ?  <AnimatedName/>:  <div className="min-h-screen flex  flex-col">
-      <div className="border-b pb-[40px]">
-        <div className="md:w-[90%] mx-auto  md:min-h-[700px]">
-          <div className="font-[700] text-[26px] md:text-[64px] md:leading-[92px] leading-[37px] tracking-[0.64px]">
+      <div className="border-b pb-[20px]">
+        <div className="md:w-[90%] mx-auto  md:min-h-[500px]">
+          <div className="font-[700] text-[20px] md:text-[50px] md:leading-[65px] leading-[37px] tracking-[0.64px]">
             Crafting{" "}
             <span className="dark:text-[#53BDD1] text-[#4898A7]">
               user-centric digital products
@@ -40,7 +40,7 @@ const IndexPage = () => {
             - I bring expertise and creativity to every{" "}
             <span className="dark:text-[#53BDD1] text-[#4898A7]">design</span>.
           </div>
-          <p className="text-[18px] md:text-[28px] md:leading-[46px] leading-[30px] mt-8">
+          <p className="text-[16px] md:text-[24px] md:leading-[35px] leading-[30px] mt-8">
             Hi, I am Mojeedat, a UX designer with 4 years of experience creating
             user-centric designs that balance business goals and user needs.
             Skilled in Lean UX and Agile methods, I specialize in designing
@@ -48,13 +48,13 @@ const IndexPage = () => {
             approach combines strategic insights and creativity to deliver
             optimized, user-focused designs.
           </p>
-          <div className="flex mt-10  md:mt-16 gap-6  justify-center items-center ">
-            <Button className="md:text-[20px] text-[14px] rounded-full font-[600] md:p-[32px] p-[18px]">
+          <div className="flex mt-10  md:mt-10 gap-6  justify-center items-center ">
+            <Button className="md:text-[18px] text-[14px] rounded-full font-[600] md:p-[26px] p-[14px]">
               Find out more
             </Button>
             <Button
               variant="outlined"
-              className="border border-black dark:border-white md:text-[20px] text-[14px] font-[600] md:p-[32px] p-[18px] rounded-full "
+              className="border border-black dark:border-white md:text-[18px] text-[14px] font-[600] md:p-[26px] p-[14px] rounded-full "
             >
               Send a Message
             </Button>
@@ -62,7 +62,7 @@ const IndexPage = () => {
         </div>
       </div>
       <div className="  mt-8   md:p-8">
-        <h2 className="font-[600] mb-16 text-[40px]">Projects</h2>
+        <h2 className="font-[600] mb-16 text-[32px]">Projects</h2>
 
         <ProjectsSection />
         <div className=" pt-20 mt-20">

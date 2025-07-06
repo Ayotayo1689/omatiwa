@@ -26,7 +26,7 @@ const ProjectShowcase = ({
     >
       <div
         style={{
-          backgroundImage: `url('${image}')`,
+          // backgroundImage: `url('${image}')`,
           backgroundSize: "contain",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -35,7 +35,9 @@ const ProjectShowcase = ({
         className={`w-full min-h-[250px]  lg:w-1/2 p-8 flex items-center justify-center ${
           imagePosition === "right" ? "lg:order-2" : ""
         }`}
-      ></div>
+      >
+       <img src={image} alt="" className="h-[90%]" /> 
+      </div>
 
       {/* Content Section */}
       <div
