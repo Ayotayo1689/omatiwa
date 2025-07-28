@@ -35,6 +35,35 @@ import FreelanceTemplate from "../src/assets/FreelanceTemplate.svg";
 import PaymentManagement from "../src/assets/PaymentManagement.svg";
 import ProjectManagement from "../src/assets/ProjectManagement.svg";
 import MobileResponsiveness from "../src/assets/MobileResponsiveness.svg";
+import Tallents from "../src/assets/Tallents.svg";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import ZorftDesign from "../src/assets/ZorfDesign.svg";
+import ZorftBanner from "../src/assets/ZorftBanner.svg";
+import ZorftMobile from "../src/assets/ZorftMobile.svg";
+import ZorftWireFrame from "../src/assets/ZorftWireFrame.svg";
+import ZorftWork from "../src/assets/ZorftWork.svg";
+import Challenge from "../src/assets/Challenge.svg";
+
+
+
+
+
+
 
 export const projectsData = [
   {
@@ -128,7 +157,7 @@ export const users = [
       name: "My Role",
       description:
         "As the sole product designer on Fivani, I led the entire design process, from the research phase to high-fidelity prototypes and developer handoff. In addition to designing the user experience, I handled all UX writing across the platform, ensuring that the content was clear, helpful, and aligned with the brand’s voice. This project was executed in collaboration with Fivani’s Head of Product and a freelance Growth Consultant.",
-      img: "",
+      img: Challenge,
     },
     phaseTwo: [
       {
@@ -495,7 +524,7 @@ export const users = [
     Description:
       "‘Why settle for generic solutions when your business can thrive with tailored innovation? At Zorfts Technologies, we blend creativity and technology to build powerful digital experiences that move brands forward.’",
     BtnText: "View Website",
-    bannerImg: "",
+    bannerImg: ZorftBanner,
     overViewDescription:
       "A leading technology company providing comprehensive digital solutions to help businesses succeed in a fast-paced digital world. Specialized in brand and graphic design, web and app development, data analytics, software development, and IT consulting.",
     overViewCategory: [
@@ -514,7 +543,7 @@ export const users = [
       name: "Identifying the Challenge",
       description:
         "While digitalization is essential for modern businesses, many struggle to find a single partner that can handle their diverse needs, such as branding and web development, data analytics, IT consulting and other services. This often leaves companies using different services from different providers, which can be inefficient and costly.",
-      img: "",
+      img: Challenge,
     },
     phaseTwo: [
       {
@@ -550,7 +579,7 @@ export const users = [
           name: "Mid Fidelity Wireframe",
           description:
             "Next were the mid-fidelity wireframes, built on the insights gotten and project objectives. It focused on the core structure and functionality of the website. These wireframes were used for user testing sessions.  ",
-          images: ["", ""],
+          images: [ZorftWireFrame, ZorftWork],
         },
       ],
     },
@@ -563,7 +592,7 @@ export const users = [
           description:
             "With the feedbacks from the user testing and stakeholders’ input, I improved on the mid fidelity wireframes, and iterated, ensuring the needs and goals of the users and stakeholders reflect in the final design. ",
 
-          images: ["", ""],
+          images: [ZorftDesign, Tallents],
         },
         {
           name: "Mobile Responsiveness",
@@ -571,7 +600,7 @@ export const users = [
           description:
             "We also designed the mobile version of the entire website to maintain visual consistency and ensure full responsiveness across all devices",
 
-          images: [""],
+          images: [ZorftMobile],
         },
       ],
     },

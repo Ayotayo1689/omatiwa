@@ -162,7 +162,7 @@ const Navbar = () => {
           </div>
 
           <nav className="flex flex-col mt-12 space-y-8 text-xl">
-            {["/work/2", "/about", "/fun", "/resume"].map((path) => (
+            {["/work", "/about", "/fun", "/resume"].map((path) => (
               <Link
                 key={path}
                 to={path}

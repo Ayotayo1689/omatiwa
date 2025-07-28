@@ -8,6 +8,7 @@ import AnimatedName from "./components/AnimatedName";
 import About from "./pages/About";
 import { Fun } from "./pages/Fun";
 import Work from "./pages/Work";
+import ScrollToTop from "./components/ScrollToTop";
 
 const IndexPage = React.lazy(() => import("./pages/IndexPage"));
 
@@ -41,6 +42,7 @@ function App() {
     <>
       <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
         <Navbar />
+      
         <div className="main  max-w-[1600px] px-6 md:px-[50px] m-auto">
           <Routes>
             <Route
@@ -59,7 +61,10 @@ function App() {
               path="/work/:id"
               element={<NonProtectedLazyRoute Component={Work} />}
             />
-             
+            <Route
+              path="/work"
+              element={<NonProtectedLazyRoute Component={Work} />}
+            />
           </Routes>
         </div>
         <Footer />

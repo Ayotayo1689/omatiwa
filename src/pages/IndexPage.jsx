@@ -40,7 +40,7 @@ const IndexPage = () => {
             - I bring expertise and creativity to every{" "}
             <span className="dark:text-[#53BDD1] text-[#4898A7]">design</span>.
           </div>
-          <p className="text-[16px] md:text-[24px] md:leading-[35px] leading-[30px] mt-8">
+          <p className="text-[18px] md:text-[22px] md:leading-[46px] leading-[30px] mt-8">
             Hi, I am Mojeedat, a UX designer with 4 years of experience creating
             user-centric designs that balance business goals and user needs.
             Skilled in Lean UX and Agile methods, I specialize in designing
@@ -62,11 +62,11 @@ const IndexPage = () => {
         </div>
       </div>
       <div className="  mt-8   md:p-8">
-        <h2 className="font-[600] mb-16 text-[32px]">Projects</h2>
+        <h2 className="font-[600] mb-16 text-[20px] md:text-[32px]">Projects</h2>
 
         <ProjectsSection />
         <div className=" pt-20 mt-20">
-          <h2 className="  md:text-[40px] mb-16 text-[24px] font-[600]">
+          <h2 className="  md:text-[32px] text-[20px] mb-16  font-[600]">
             Visual Design Works
           </h2>
           <p className="text-[18px] md:text-[24px] md:leading-[46px] leading-[30px] mt-4">
