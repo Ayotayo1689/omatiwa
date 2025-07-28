@@ -150,8 +150,8 @@ export const Fun = () =>  {
                 <img src={item.image || "/placeholder.svg"} alt={item.title}  className="object-cover" />
               </div>
               <div className="space-y-1">
-                <h3 className=" font-[600] text-[18px] md:text-[27px] leading-tight">{item.title}</h3>
-                {item.author && <p className="  text-[14px] md:text-sm">{item.author}</p>}
+                <h3 className=" font-[600] text-[14px] md:text-[18px] xl:text-[22px] leading-tight">{item.title}</h3>
+                {item.author && <p className=" text-sm">{item.author}</p>}
               </div>
             </div>
           ))}
@@ -165,7 +165,7 @@ export const Fun = () =>  {
           {/* Header Section */}
           <div className="mb-12 md:mb-16">
             <h1 className="text-2xl md:text-[40px] font-[600] mb-6">Beyond the Screen</h1>
-            <p className="  text-[16px] md:text-[24px] leading-relaxed ">
+            <p className=" text-[14px] md:text-[18px] xl:text-[22px] leading-relaxed ">
               A glimpse into what I do for fun and fuels my mind outside design. I'm drawn to stories that challenge the
               mind and stir the soul, whether it's through thought-provoking books, visually striking films, or the pieces
               I write myself. From psychological thrillers and feminist fiction to mind-bending cinema, I seek narratives

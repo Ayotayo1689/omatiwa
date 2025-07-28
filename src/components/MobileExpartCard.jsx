@@ -55,7 +55,7 @@ export default function MobileExpertiseCards() {
         <h1 className="font-[600] md:text-[40px] text-[24px] mb-4">
           My Expertise
         </h1>
-        <p className="text-[18px] md:text-[24px] md:leading-[46px] leading-[30px] mt-4 mb-8">
+        <p className="text-[14px] md:text-[18px] xl:text-[22px] md:leading-[46px] leading-[30px] mt-4 mb-8">
           Interested in knowing the tools I use, the skills I have developed,
           and the industries I have had a chance to design for? See how I work,
           where I have made an impact, and the ways I keep growing as a

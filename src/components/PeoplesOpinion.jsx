@@ -55,7 +55,7 @@ const PeoplesOpinion = () => {
               </div>
 
               <div className="flex-1">
-                <p className=" md:font-[500] text-[16px] md:text-[22px] leading-relaxed">{testimonial.testimonial}</p>
+                <p className=" md:font-[500] text-[14px] md:text-[18px] xl:text-[22px] leading-relaxed">{testimonial.testimonial}</p>
               </div>
             </div>
           ))}

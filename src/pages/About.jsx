@@ -12,7 +12,7 @@ const About = () => {
  <div className="md:text-[40px] text-[24px] font-[600] mt-8">
         A Quick Peek into My World
       </div>
-      <p className="text-[16px] md:text-[28px] md:leading-[46px] leading-[30px] mt-8 ">
+      <p className="text-[14px] md:text-[18px] xl:text-[22px] md:leading-[46px] leading-[30px] mt-8 ">
         I’m <span className="font-[600]">Mustapha Mojeedat</span> , popularly
         known as <span className="font-[600]">Omatiwa</span> . with four (4)
         years of experience creating{" "}
@@ -27,20 +27,20 @@ const About = () => {
         interfaces that feel effortless to use.
       </p>
       <img src={Majeedat} alt="" className="m-auto my-8" />
-      <p className="text-[16px] md:text-[28px] md:leading-[46px] leading-[30px]">
+      <p className="text-[14px] md:text-[18px] xl:text-[22px] md:leading-[46px] leading-[30px]">
         With a background in Sociology (BSc) and Criminology (MSc & PhD in
         progress), I approach design with deep empathy and psychological
         insight, always thinking about how to merge user needs with business
         goals. I love crafting experiences that connect emotionally while
         solving real problems.{" "}
       </p>{" "}
-      <p className="text-[16px] md:text-[28px] md:leading-[46px] leading-[30px]">
+      <p className="text-[14px] md:text-[18px] xl:text-[22px] md:leading-[46px] leading-[30px]">
         As an introvert and observer, I’m especially drawn to understanding user
         psychology and designing with purpose. My work blends research,
         intuition, and visual clarity to create experiences that feel both human
         and intentional.
       </p>{" "}
-      <p className="text-[16px] md:text-[28px] md:leading-[46px] leading-[30px]">
+      <p className="text-[14px] md:text-[18px] xl:text-[22px] md:leading-[46px] leading-[30px]">
         Currently, I’m exploring motion design and diving into user psychology
         through both design and reading. When I’m not designing, you’ll find me
         in my room lost in a romance or thriller novel, writing essays on

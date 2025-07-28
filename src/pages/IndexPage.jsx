@@ -8,27 +8,15 @@ import Ulit from "../assets/ulit.svg";
 import ExpertiseCards from "@/components/ExpertiseCard";
 import PeoplesOpinion from "@/components/PeoplesOpinion";
 import MobileExpertiseCards from "@/components/MobileExpartCard";
-import AnimatedName from "@/components/AnimatedName";
 
 const IndexPage = () => {
-  const [logoShow, setlogoShow] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setlogoShow(false);
-    }, 5000);
-
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
-    <>
-    
-    {
-      logoShow ?  <AnimatedName/>:  <div className="min-h-screen flex  flex-col">
-      <div className="border-b pb-[20px]">
+    <div className="min-h-screen flex  flex-col">
+      <div className="border-b min-h-[80dvh] flex justify-center items-center pb-[20px]">
         <div className="md:w-[90%] mx-auto  md:min-h-[500px]">
-          <div className="font-[700] text-[20px] md:text-[50px] md:leading-[65px] leading-[37px] tracking-[0.64px]">
+          <div className="font-[700] text-[20px] md:text-[40px] xl:text-[50px] md:leading-[65px] leading-[37px] tracking-[0.64px]">
             Crafting{" "}
             <span className="dark:text-[#53BDD1] text-[#4898A7]">
               user-centric digital products
@@ -40,7 +28,7 @@ const IndexPage = () => {
             - I bring expertise and creativity to every{" "}
             <span className="dark:text-[#53BDD1] text-[#4898A7]">design</span>.
           </div>
-          <p className="text-[18px] md:text-[22px] md:leading-[46px] leading-[30px] mt-8">
+          <p className="text-[14px] md:text-[18px] xl:text-[22px] md:leading-[40px]  xl:leading-[46px] leading-[30px] mt-6 xl:mt-6">
             Hi, I am Mojeedat, a UX designer with 4 years of experience creating
             user-centric designs that balance business goals and user needs.
             Skilled in Lean UX and Agile methods, I specialize in designing
@@ -48,13 +36,13 @@ const IndexPage = () => {
             approach combines strategic insights and creativity to deliver
             optimized, user-focused designs.
           </p>
-          <div className="flex mt-10  md:mt-10 gap-6  justify-center items-center ">
-            <Button className="md:text-[18px] text-[14px] rounded-full font-[600] md:p-[26px] p-[14px]">
+          <div className="flex mt-10  md:mt-6 gap-4 md:gap-6 justify-between md:justify-center items-center ">
+            <Button className="md:text-[18px]  md:max-w-fit flex-1 text-[14px] rounded-full font-[600] md:p-[26px] p-[10px]">
               Find out more
             </Button>
             <Button
               variant="outlined"
-              className="border border-black dark:border-white md:text-[18px] text-[14px] font-[600] md:p-[26px] p-[14px] rounded-full "
+              className="border border-black flex-1  md:max-w-fit dark:border-white md:text-[18px] text-[14px] font-[600] md:p-[26px] p-[14px] rounded-full "
             >
               Send a Message
             </Button>
@@ -62,14 +50,16 @@ const IndexPage = () => {
         </div>
       </div>
       <div className="  mt-8   md:p-8">
-        <h2 className="font-[600] mb-16 text-[20px] md:text-[32px]">Projects</h2>
+        <h2 className="font-[600] mb-16 text-[20px] md:text-[32px]">
+          Projects
+        </h2>
 
         <ProjectsSection />
         <div className=" pt-20 mt-20">
           <h2 className="  md:text-[32px] text-[20px] mb-16  font-[600]">
             Visual Design Works
           </h2>
-          <p className="text-[18px] md:text-[24px] md:leading-[46px] leading-[30px] mt-4">
+          <p className="text-[14px] md:text-[18px] xl:text-[22px] md:leading-[46px] leading-[30px] mt-4">
             Here are some designs that showcases my conceptual and creative
             work. Each piece reflects a balance of innovation, user-centric
             design principles, and strategic thinking. While they don’t include
@@ -82,7 +72,7 @@ const IndexPage = () => {
                 <h3 className="md:text-[32px] text-white text-[18px] font-[600]">
                   Suitroh
                 </h3>
-                <p className="text-[14px] text-white  md:text-[18px] md:leading-[36px] leading-[20px] mt-2">
+                <p className="text-[14px] md:text-[18px] xl:text-[22px] text-white   md:leading-[36px] leading-[20px] mt-2">
                   I believe great design balances user needs, visual appeal, and
                   seamless interacte With a degree in{" "}
                 </p>
@@ -97,7 +87,7 @@ const IndexPage = () => {
                 <h3 className="md:text-[32px] text-black text-[18px] font-[600]">
                   Kudiwave
                 </h3>
-                <p className="text-[14px] text-black  md:text-[18px] md:leading-[36px] leading-[20px] mt-2">
+                <p className="text-[14px] md:text-[18px] xl:text-[22px] text-black  md:leading-[36px] leading-[20px] mt-2">
                   Looking to simplify your finances? Send, save, and manage your
                   money effortlessly with Kudiwave
                 </p>
@@ -114,7 +104,7 @@ const IndexPage = () => {
                 <h3 className="md:text-[32px] text-black text-[18px] font-[600]">
                   Onibata
                 </h3>
-                <p className="text-[14px] text-black  md:text-[18px] md:leading-[36px] leading-[20px] mt-2">
+                <p className="text-[14px] md:text-[18px] xl:text-[22px] text-black  md:leading-[36px] leading-[20px] mt-2">
                   Wants custom-made footwears? Onibata delivers handcrafted
                   shoes tailored to your style and fit, with a seamless AI
                   measuring experience.{" "}
@@ -130,7 +120,7 @@ const IndexPage = () => {
                 <h3 className="md:text-[32px] text-white text-[18px] font-[600]">
                   Ulit
                 </h3>
-                <p className="text-[14px] text-white  md:text-[18px] md:leading-[36px] leading-[20px] mt-2">
+                <p className="text-[14px] md:text-[18px] xl:text-[22px] text-white md:leading-[36px] leading-[20px] mt-2">
                   Curious of digital currency? Ulit is a trusted, user-friendly
                   way to start cryptocurrency, making digital assets accessible
                   and secure{" "}
@@ -151,9 +141,6 @@ const IndexPage = () => {
         <PeoplesOpinion />
       </div>
     </div>
-    }
-    </>
-   
   );
 };
 

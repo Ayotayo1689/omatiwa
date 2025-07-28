@@ -157,7 +157,7 @@ export const users = [
       name: "My Role",
       description:
         "As the sole product designer on Fivani, I led the entire design process, from the research phase to high-fidelity prototypes and developer handoff. In addition to designing the user experience, I handled all UX writing across the platform, ensuring that the content was clear, helpful, and aligned with the brand’s voice. This project was executed in collaboration with Fivani’s Head of Product and a freelance Growth Consultant.",
-      img: Challenge,
+      // img: Challenge,
     },
     phaseTwo: [
       {

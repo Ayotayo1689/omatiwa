@@ -36,7 +36,7 @@ const experiences = [
 
 const WorkExperience = () => {
   return (
-    <section className="  px-4 md:px-0 py-[80px] md:py-[120px] border-t-2 mt-[100px]">
+    <section className="  px-4 md:px-0 py-[50px] md:py-[100px] border-t-2 md:mt-[100px] mt-[50px]">
       <div className="  mx-auto">
         <h2 className="text-[20px] md:text-[40px] font-semibold mb-16">
           My Work Experience
@@ -49,14 +49,14 @@ const WorkExperience = () => {
               className="border-b dark:border-[#1F2B2B] border-[#4AA3B4] pb-6"
             >
               <div className="flex flex-col py-2 md:flex-row justify-between items-start gap-4">
-                <p className="text-[20px] md:text-[25px] font-[500]">
+                <p className="text-[16px] md:text-[18px] xl:text-[22px] font-[500]">
                   {exp.company}
                 </p>
                 <div className="text-left  min-w-[350px] md:text-left">
-                  <p className="text-[18px] md:text-[25px] font-[500]">
+                  <p className="text-[16px] md:text-[18px] xl:text-[22px] font-[500]">
                     {exp.role}
                   </p>
-                  <p className="text-[14px] md:text-[20px] font-[400]">
+                  <p className="text-[14px] md:text-[18px] xl:text-[22px] font-[400]">
                     {exp.date}
                   </p>
                 </div>

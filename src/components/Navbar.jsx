@@ -122,10 +122,13 @@ const Navbar = () => {
   }, [isMenuOpen]);
 
   return (
-    <div className="py-8 px-4 max-w-[1600px] mx-auto md:px-16 sticky top-0 z-50">
-      <header className="flex bg-[#ffffff98] dark:bg-[#1212247c] backdrop-blur-sm items-center justify-between border p-4 md:p-6 rounded-full">
-        <Link to="/">
-          <LogoIcon />
+    <div className="py-4 px-4 max-w-[1600px] mx-auto md:px-16 sticky top-0 z-50">
+      <header className="flex sticky w-full   bg-[#ffffff98] dark:bg-[#1212247c] backdrop-blur-sm items-center justify-between border p-4 md:p-6 rounded-full">
+        <Link to="/work">
+         <div className="hidden md:flex
+           justify-center items-center"> <LogoIcon /></div>
+         <div className="md:hidden 
+          flex justify-center items-center"> <LogoIcon width="100" /></div>
         </Link>
 
         <nav className="hidden md:flex items-center space-x-12">
@@ -151,22 +154,22 @@ const Navbar = () => {
       </header>
 
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-white dark:bg-[#121224] z-50 flex flex-col px-6 py-5">
+        <div className="fixed inset-0 bg-white dark:bg-[#121224] z-50 flex flex-col px-4 py-5">
           <div className="flex justify-between items-center border px-4 py-3 rounded-full">
             <Link to="/" onClick={toggleMenu}>
-              <LogoIcon />
+              <LogoIcon width="100" />
             </Link>
             <button onClick={toggleMenu} aria-label="Close menu">
               <X size={24} />
             </button>
           </div>
 
-          <nav className="flex flex-col mt-12 space-y-8 text-xl">
+          <nav className="flex px-6 flex-col mt-12 space-y-8 text-xl">
             {["/work", "/about", "/fun", "/resume"].map((path) => (
               <Link
                 key={path}
                 to={path}
-                className="border-b-2 pb-1 w-fit"
+                className="border-b-2 pb-1 text-[14px] w-fit"
                 onClick={toggleMenu}
               >
                 {path.replace("/", "").charAt(0).toUpperCase() + path.slice(2)}

@@ -16,7 +16,7 @@ const Work = () => {
         <h1 className="md:text-[50px] text-[32px] font-[700]">
           {workItem?.name}
         </h1>
-        <q className="max-w-7xl text-center text-[16px] md:text-[22px]">
+        <q className="max-w-7xl text-center text-[14px] md:text-[18px] xl:text-[22px]">
           <i>{workItem?.Description}</i>
         </q>
 
@@ -32,7 +32,7 @@ const Work = () => {
         Introduction |1
       </div>
       <h1 className="text-[20px] mb-4 md:text-[32px] font-[600]">Overview</h1>
-      <p className="text-[16px] md:text-[22px]">
+      <p className="text-[14px] md:text-[18px] xl:text-[22px]">
         {workItem?.overViewDescription}
       </p>
       <div className="  md:my-20 md:p-6 flex justify-between md:justify-evenly md:gap-4 flex-wrap">
@@ -45,7 +45,7 @@ const Work = () => {
               {data.children.map((d, i) => (
                 <p
                   key={i}
-                  className="text-[16px] md:text-[18px] mt-2 font-[500] "
+                  className="text-[14px] md:text-[18px] xl:text-[22px] mt-2 mr-2 font-[500] "
                 >
                   {d}
                 </p>
@@ -58,7 +58,7 @@ const Work = () => {
         <h1 className="text-[20px] md:text-[32px] mb-4 font-[600]">
           {workItem?.sectionTwo.name}
         </h1>
-        <p className="text-[16px] md:text-[20px]">
+        <p className="text-[14px] md:text-[18px] xl:text-[22px]">
           {workItem?.sectionTwo.description}
         </p>
       </div>
@@ -66,7 +66,7 @@ const Work = () => {
         <h1 className="text-[20px] md:text-[32px] mb-4 font-[600]">
           {workItem?.sectionThree.name}
         </h1>
-        <p className="text-[16px] md:text-[20px]">
+        <p className="text-[14px] md:text-[18px] xl:text-[22px]">
           {workItem?.sectionThree.description}
         </p>
 
@@ -80,12 +80,12 @@ const Work = () => {
           <h1 className="text-[20px] md:text-[32px] mb-4 font-[600]">
             {data.title}
           </h1>
-          <p className="text-[16px] md:text-[20px]">{data.description}</p>
+          <p className="text-[14px] md:text-[18px] xl:text-[22px]">{data.description}</p>
           <div className="mt-10">
             {data.list.map((d, i) => (
               <div
                 key={i}
-                className="mb-6 items-start  flex text-[16px] md:text-[20px] gap-2 md:gap-4"
+                className="mb-6 items-start  flex text-[14px] md:text-[18px] xl:text-[22px] gap-2 md:gap-4"
               >
                 {" "}
                 <img src={PinImg} className="w-8" />
@@ -114,7 +114,7 @@ const Work = () => {
         {workItem?.phaseThree.heading} Phase |3
       </div>
       {workItem?.phaseThree.question && (
-        <div className="p-6 mb-20 w-fit m-auto text-[16px] md:text-[20px] font-[400] dark:bg-[#152528] bg-[#D7EFF4]">
+        <div className="p-6 mb-20 w-fit m-auto text-[14px] md:text-[18px] xl:text-[22px] font-[400] dark:bg-[#152528] bg-[#D7EFF4]">
           <i>{workItem?.phaseThree.question}</i>
         </div>
       )}
@@ -124,7 +124,7 @@ const Work = () => {
             <h1 className="text-[20px] md:text-[32px] mb-4 font-[600]">
               {d.name}
             </h1>
-            <p className="text-[16px] md:text-[20px]">{d.description}</p>
+            <p className="text-[14px] md:text-[18px] xl:text-[22px]">{d.description}</p>
             {d.images.map((i, x) => (
               <img key={x} src={i} className="mt-10" alt="" />
             ))}
@@ -136,7 +136,7 @@ const Work = () => {
                     key={c}
                     className="bg-[#D7EFF4] mb-16 dark:bg-[#152528] p-6 md:p-16 "
                   >
-                    <p className="text-[16px] md:text-[20px]">{s.text}</p>
+                    <p className="text-[14px] md:text-[18px] xl:text-[22px]">{s.text}</p>
                     <img
                       src={s.img}
                       className="md:w-[150px] w-[80px] m-auto my-6"
@@ -149,7 +149,7 @@ const Work = () => {
                       {s.experience?.map((item, index) => (
                         <div
                           key={index}
-                          className="flex mt-2 items-center text-[16px] md:text-[20px]"
+                          className="flex mt-2 items-center text-[14px] md:text-[18px] xl:text-[22px]"
                         >
                           <span>{item}</span>
                           {index < s.experience.length - 1 && (
@@ -228,7 +228,7 @@ const Work = () => {
         {workItem?.phaseFour.data.map((d, i) => (
           <div key={i} className="  mb-[80px]">
             <h1 className="text-[20px] md:text-[32px] mb-4 font-[600]">{d.name}</h1>
-            <p className="text-[16px] md:text-[20px]">{d.description}</p>
+            <p className="text-[14px] md:text-[18px] xl:text-[22px]">{d.description}</p>
             {d.images.map((i, x) => (
               <img key={x} src={i} className="mt-10" alt="" />
             ))}
@@ -237,7 +237,7 @@ const Work = () => {
                 {d.children.map((ch, index) => (
                   <div key={index} className="">
                     <h1 className="text-[20px] md:text-[26px] mb-4 font-[600]">{ch.name}</h1>
-                    <p className="text-[16px] md:text-[18px]">{ch.description}</p>
+                    <p className="text-[14px] md:text-[18px] xl:text-[22px]">{ch.description}</p>
                     <img src={ch.image} className="mt-10 border mb-16" alt="" />
                   </div>
                 ))}
@@ -255,7 +255,7 @@ const Work = () => {
           {workItem?.prototype.map((d, i) => (
             <div key={i} className="  mb-[80px]">
               <h1 className="text-[20px] md:text-[32px] mb-4 font-[600]">{d.name}</h1>
-              <p className="text-[16px] md:text-[20px]">{d.description}</p>
+              <p className="text-[14px] md:text-[18px] xl:text-[22px]">{d.description}</p>
 
               <img src={d.images} className="mt-10" alt="" />
             </div>
@@ -271,7 +271,7 @@ const Work = () => {
           {workItem?.testing.map((d, i) => (
             <div key={i} className="  mb-[80px]">
               <h1 className="text-[20px] md:text-[32px] mb-4 font-[600]">{d.name}</h1>
-              <p className="text-[16px] md:text-[20px]">
+              <p className="text-[14px] md:text-[18px] xl:text-[22px]">
                 {d?.description?.split("\n").map((paragraph, index) => (
                   <p key={index} className="mb-4">
                     {paragraph}
@@ -288,7 +288,7 @@ const Work = () => {
                     <i className="text-[20px] md:text-[26px] mb-8 text-[#0BBBDB] underline  font-[500]">
                       {v.title}
                     </i>
-                    <p className="text-[16px] md:text-[22px] mt-6   leading-relaxed ">
+                    <p className="text-[14px] md:text-[18px] xl:text-[22px] mt-6   leading-relaxed ">
                       {v.description}
                     </p>
                   </div>
@@ -309,7 +309,7 @@ const Work = () => {
           {workItem?.iteration.map((d, i) => (
             <div key={i} className="  mb-[80px]">
               <h1 className="text-[20px] md:text-[32px] mb-4 font-[600]">{d.name}</h1>
-              <p className="text-[16px] md:text-[20px]">
+              <p className="text-[14px] md:text-[18px] xl:text-[22px]">
                 {d?.description?.split("\n").map((paragraph, index) => (
                   <p key={index} className="mb-4">
                     {paragraph}
@@ -332,7 +332,7 @@ const Work = () => {
                     >
                       {v.title}
                     </div>
-                    <p className="text-[16px] md:text-[22px] mt-6   leading-relaxed ">
+                    <p className="text-[14px] md:text-[18px] xl:text-[22px] mt-6   leading-relaxed ">
                       {v.description}
                     </p>
                   </div>
@@ -359,7 +359,7 @@ const Work = () => {
                 return (
                   <div
                     key={i}
-                    className="mb-6 items-start flex text-[16px] md:text-[20px] gap-4"
+                    className="mb-6 items-start flex text-[14px] md:text-[18px] xl:text-[22px] gap-4"
                   >
                     <img src={PinImg} className="w-8" />
                     <span>

@@ -47,34 +47,34 @@ const ProjectShowcase = ({
       >
         <div className=" flex flex-col">
           {smallHeading && (
-            <p className="text-[#53BDD1]  dark:text-[#2C4D54] mb-8 font-[700] text-[14px] md:text-[18px]">
+            <p className="text-[#53BDD1]  dark:text-[#2C4D54] mb-4 md:mb-8 font-[700]  text-[14px] md:text-[18px] xl:text-[22px] ">
               {smallHeading}
             </p>
           )}
 
           {bigHeading && (
-            <h2 className="text-[24px] text-white dark:text-[#000] md:text-[36px] font-[700] mb-2">
+            <h2 className="text-[24px] text-white dark:text-[#000] md:text-[36px] font-[700] ">
               {bigHeading}
             </h2>
           )}
 
           {subHeading && (
-            <h3 className="md:text-[20px] text-[16px] font-[500] text-[#BCD7DC] dark:text-[#697F83] mb-6">
+            <h3 className="text-[14px] md:text-[18px] xl:text-[22px]  font-[500] text-[#BCD7DC] dark:text-[#697F83] mb-4 md:mb-6">
               {subHeading}
             </h3>
           )}
 
           {description && (
-            <p className="dark:text-[#000] text-white md:text-[20px] text-[16px] mb-8 leading-relaxed">
+            <p className="dark:text-[#000] text-white text-[14px] md:text-[18px] xl:text-[22px]  mb-8 md:mb-2 leading-relaxed">
               {description}
             </p>
           )}
 
-          <div className="flex  mt-4  gap-4">
+          <div className="flex  mb-6 md:mb-0 md:mt-4  gap-4">
             {primaryButtonText && (
               <button
                 onClick={onPrimaryButtonClick}
-                className="dark:bg-black text-[12px] md:text-[14px] bg-white dark:text-white text-black hover:bg-gray-100 rounded-full md:px-8 md:py-3 py-[14px] px-[18px] font-[500] transition-colors"
+                className="dark:bg-black  md:max-w-fit whitespace-nowrap flex-1 text-[12px] md:text-[14px] bg-white dark:text-white text-black hover:bg-gray-100 rounded-full md:px-4   flex justify-center items-center md:py-2 max-h-[40px] py-[14px] px-[8px] font-[500] transition-colors"
               >
                 {primaryButtonText}
               </button>
@@ -83,7 +83,7 @@ const ProjectShowcase = ({
             {secondaryButtonText && (
               <button
                 onClick={onSecondaryButtonClick}
-                className="border border-white text-[12px] md:text-[14px] dark:bg-white bg-black dark:text-black text-white dark:border-black bg-transparent hover:bg-white/10 rounded-full md:px-8 md:py-3 py-[14px] px-[18px] font-[500] transition-colors"
+                className="border  md:max-w-fit border-white flex-1 whitespace-nowrap text-[12px] md:text-[14px] dark:bg-white bg-black dark:text-black text-white dark:border-black bg-transparent hover:bg-white/10 rounded-full md:px-4  flex justify-center items-center md:py-2 max-h-[40px] py-[14px] px-[8px] font-[500] transition-colors"
               >
                 {secondaryButtonText}
               </button>

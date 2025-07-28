@@ -9,6 +9,7 @@ import About from "./pages/About";
 import { Fun } from "./pages/Fun";
 import Work from "./pages/Work";
 import ScrollToTop from "./components/ScrollToTop";
+import FirstPage from "./pages/FirstPage";
 
 const IndexPage = React.lazy(() => import("./pages/IndexPage"));
 
@@ -47,8 +48,9 @@ function App() {
           <Routes>
             <Route
               path="/"
-              element={<NonProtectedLazyRoute Component={IndexPage} />}
+              element={<NonProtectedLazyRoute Component={FirstPage} />}
             />
+          
             <Route
               path="/about"
               element={<NonProtectedLazyRoute Component={About} />}
@@ -63,7 +65,7 @@ function App() {
             />
             <Route
               path="/work"
-              element={<NonProtectedLazyRoute Component={Work} />}
+              element={<NonProtectedLazyRoute Component={IndexPage} />}
             />
           </Routes>
         </div>

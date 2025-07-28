@@ -7,7 +7,7 @@ const Footer = () => {
           <h2 className="md:text-[32px] text-[24px] font-[600] mb-4">
             Let's connect
           </h2>
-          <p className=" mb-8   md:text-[20px] text-[16px] font-[400] mx-auto">
+          <p className=" mb-8  text-[14px] md:text-[18px] xl:text-[22px] font-[400] mx-auto">
             Whether for collaboration, opportunities, or just a friendly chat
             about design
           </p>
@@ -25,7 +25,7 @@ const Footer = () => {
             <p>© Omatiwa 2024</p>
           </div>
 
-          <div className="grid grid-cols-2 gap-x-8 gap-y-4 text-right">
+          <div className="grid grid-cols-2 gap-x-8 gap-y-4  text-right">
             <a
               href="https://linkedin.com"
               className="hover:text-cyan-400 transition-colors"

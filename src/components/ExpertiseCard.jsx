@@ -54,18 +54,18 @@ export default function ExpertiseCards() {
     <div className="min-h-screen  border-y-2 mt-[100px] py-[100px] ">
       <div className=" mx-auto">
         <h1 className="font-[600] text-[20] md:text-[32px] mb-4">My Expertise</h1>
-        <p className="text-[18px] md:text-[20px] md:leading-[46px] leading-[30px] mt-4  ">
+        <p className="text-[14px] md:text-[18px] xl:text-[22px]  md:leading-[46px] leading-[30px] mt-4  ">
           Interested in knowing the tools I use, the skills I have developed,
           and the industries I have had a chance to design for? See how I work,
           where I have made an impact, and the ways I keep growing as a
           designer.
         </p>
 
-        <div className="flex   mt-24   min-h-96">
+        <div className="flex   mt-24   min-h-80">
          
 
           <div
-            className="relative flex-1 flex justify-center items-center  h-96"
+            className="relative flex-1 flex  justify-center items-center  "
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
@@ -73,7 +73,7 @@ export default function ExpertiseCards() {
               <div
                 key={card.id}
                 className={`
-                  absolute w-[350px] h-96 rounded-2xl p-6 
+                  absolute flex-1   max-w-[350px]  rounded-2xl p-6 
                   transition-all duration-700 ease-out cursor-pointer
                   ${card.bgColor} ${card.textColor}  ${card.border}
                   ${
@@ -94,10 +94,10 @@ export default function ExpertiseCards() {
                   transformOrigin: "center center",
                 }}
               >
-                <h3 className="text-[24px] font-[500] mb-4">{card.title}</h3>
+                <h3 className="text-[24px]  font-[500] mb-4">{card.title}</h3>
                 <div className="space-y-2">
                   {card.items.map((item, itemIndex) => (
-                    <div key={itemIndex} className="text-[28px] font-[500]">
+                    <div key={itemIndex} className="text-[14px] md:text-[18px] xl:text-[22px] font-[500]">
                       {item}
                     </div>
                   ))}
