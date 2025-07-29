@@ -4,16 +4,16 @@ const Footer = () => {
       <div className="md:container mx-auto">
         {/* Connect Section */}
         <div className="text-center ">
-          <h2 className="md:text-[32px] text-[24px] font-[600] mb-4">
+          <h2 className="md:text-[30px] text-[24px] font-[600] mb-4">
             Let's connect
           </h2>
-          <p className=" mb-8  text-[14px] md:text-[18px] xl:text-[22px] font-[400] mx-auto">
+          <p className=" mb-8  text-[14px] md:text-[18px]  font-[400] mx-auto">
             Whether for collaboration, opportunities, or just a friendly chat
             about design
           </p>
           <a
             href="mailto:contact@omatiwa.com"
-            className="inline-block bg-black dark:bg-white text-white dark:text-black py-3 px-8 rounded-full text-[14px] md:text-[20px] font-[500] hover:bg-[#acacac] transition-colors"
+            className="inline-block font-[600] bg-black dark:bg-white text-white dark:text-black py-3 px-8 rounded-full text-[14px] md:text-[15px]  hover:bg-[#acacac] transition-colors"
           >
             Send an Email
           </a>

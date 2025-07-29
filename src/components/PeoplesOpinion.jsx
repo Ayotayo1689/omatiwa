@@ -34,7 +34,7 @@ const PeoplesOpinion = () => {
   return (
     <div className="pt-[80px] pb-[40px] ">
       <div className=" mx-auto">
-        <h2 className="md:text-[40px] text-[24px] font-[600] mb-16">Peoples' Opinions</h2>
+        <h2 className="md:text-[30px] text-[24px] font-[600] mb-16">People's Opinions</h2>
 
         <div className="space-y-8">
           {testimonials.map((testimonial) => (
@@ -49,13 +49,13 @@ const PeoplesOpinion = () => {
                   className="md:w-[80px] md:h-[80px] w-[60px] h-[60px] rounded-full object-cover"
                 />
                 <div className="mb-3">
-                  <h3 className="font-[600] text-[20px] md:text-[32px]">{testimonial.name}</h3>
-                  <p className=" text-[14px] md:text-[20px]">{testimonial.title}</p>
+                  <h3 className="font-[600] text-[20px] md:text-[24px]">{testimonial.name}</h3>
+                  <p className=" text-[14px] md:text-[16px]">{testimonial.title}</p>
                 </div>
               </div>
 
               <div className="flex-1">
-                <p className=" md:font-[500] text-[14px] md:text-[18px] xl:text-[22px] leading-relaxed">{testimonial.testimonial}</p>
+                <p className=" md:font-[500] text-[14px] md:text-[18px] xl:text-[20px] leading-relaxed">{testimonial.testimonial}</p>
               </div>
             </div>
           ))}

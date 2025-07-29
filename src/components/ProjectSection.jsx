@@ -21,7 +21,7 @@ const ProjectsSection = () => {
      
     // </section>
 
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col border-b border-[#869091]  pb-20 gap-8">
     {projectsData.map((project, index) => (
       <ProjectShowcase
         key={project.id}
