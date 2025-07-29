@@ -126,17 +126,17 @@ const Navbar = () => {
       <header className="flex sticky w-full   bg-[#ffffff98] dark:bg-[#1212247c] backdrop-blur-sm items-center justify-between border p-4 md:p-6 rounded-full">
         <Link to="/work">
          <div className="hidden md:flex
-           justify-center items-center"> <LogoIcon /></div>
+           justify-center items-center"> <LogoIcon width="130" /></div>
          <div className="md:hidden 
           flex justify-center items-center"> <LogoIcon width="100" /></div>
         </Link>
 
-        <nav className="hidden md:flex items-center space-x-12">
+        <nav className="hidden md:flex items-center space-x-[20px]">
           {["/work", "/about", "/fun", "/resume"].map((path) => (
             <Link
               key={path}
               to={path}
-              className="hover:text-cyan-400 text-[18px] transition-colors border-b-2 border-transparent hover:border-cyan-400"
+              className="hover:text-cyan-400 text-[15px] transition-colors border-b-2 border-transparent hover:border-cyan-400"
             >
               {path.replace("/", "").charAt(0).toUpperCase() + path.slice(2)}
             </Link>
