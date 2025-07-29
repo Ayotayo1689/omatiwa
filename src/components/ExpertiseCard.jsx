@@ -53,8 +53,8 @@ export default function ExpertiseCards() {
   return (
     <div className="min-h-screen  border-y-2 mt-[100px] py-[100px] ">
       <div className=" mx-auto">
-        <h1 className="font-[600] text-[20] md:text-[32px] mb-4">My Expertise</h1>
-        <p className="text-[14px] md:text-[18px] xl:text-[22px]  md:leading-[46px] leading-[30px] mt-4  ">
+        <h1 className="font-[600] text-[20px] md:text-[30px] mb-4">My Expertise</h1>
+        <p className="text-[14px] md:text-[18px]   md:leading-[35px] leading-[30px] mt-4  ">
           Interested in knowing the tools I use, the skills I have developed,
           and the industries I have had a chance to design for? See how I work,
           where I have made an impact, and the ways I keep growing as a
